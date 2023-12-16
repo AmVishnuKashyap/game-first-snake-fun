@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.boundary {
+  height: 800px;
+  width: 800px;
+  background-color: rgb(74, 158, 107);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  min-height: 100%;
+}
+
+.food {
+  background-color: greenyellow;
+  transform: scale(0.9);
+}
+
+.head {
+  background-color: red;
+  border: 2px solid rgb(200, 234, 48);
+  transform: scale(1.25);
+  border-radius: 9px;
+}
+
+.tail {
+  background-color: yellow;
+  border-radius: 40%;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: "New Tegomin", serif;
+  color: blueviolet;
+}
